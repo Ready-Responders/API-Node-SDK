@@ -1,5 +1,5 @@
 {
-  "name": "trackvia-api",
+  "name": "@Ready-Responders/Trackvia-API-Node-SDK",
   "version": "1.8.3",
   "description": "Node SDK for Trackvia's openapi.",
   "keywords": [
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Trackvia/API-Node-SDK.git"
+    "url": "git@github.com:Ready-Responders/Trackvia-API-Node-SDK.git"
   },
   "author": "Trackvia",
   "license": "ISC",
