@@ -1,5 +1,4 @@
 node_modules/
-build/
 .DS_Store
 .nyc_output/
 test/testConfig.js
