@@ -1,5 +1,5 @@
-var request = require('request');
-
+var request = require('./request');
+var { retryOptions } = require('./request');
 /**
  * Singleton service for handling authentication and api keys
  */
@@ -52,7 +52,7 @@ class Auth {
         };
 
         return new Promise((resolve, reject) => {
-            request(requestDetails, (err, res, body) => {
+            request(requestDetails, retryOptions, (err, res, body) => {
                 if(err) {
                     reject(err);
                 }
