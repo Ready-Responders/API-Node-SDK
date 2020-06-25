@@ -1,5 +1,5 @@
-var request = require('request');
-
+var request = require('./request');
+var { retryOptions } = require('./request');
 // Uncomment to debug request:
 // require('request-debug')(request);
 
@@ -50,7 +50,7 @@ class tvRequest {
 
 
         return new Promise((resolve, reject) => {
-            request(requestDetails, (err, res, body) => {
+            request(requestDetails, retryOptions, (err, res, body) => {
 
               if (err) {
                 return reject(err);
